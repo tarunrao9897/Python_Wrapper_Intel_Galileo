@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+
+    <head><title>CONTROL GALILEO GPIO BY WEBPAGE - TOMMY_Z</title></head>
+    <body >
+        <h1>Change State</h1>
+			<form method="post" action="/confirm">
+	<table border="1">
+			<tr>
+			<td>
+
+			<p>PORT<br>
+			<select name="port">  
+
+					<option name="port" value ="IO13" checked>IO13</option>  
+					<option name="port" value ="-" checked>-</option>  
+					</select></p>
+
+
+				<p>State:</p>
+					<input type="radio" name="state" value ="ON" checked>ON<br>
+					<input type="radio" name="state" value ="OFF">OFF<br>
+
+				<p> Tarun {{local_time}}</p>
+			</td>
+
+
+
+			</tr>
+	</table>
+			<button type='submit' class='btn btn-warning'>Submit</button>
+        </form>
+	
+    </body>
+</html>
